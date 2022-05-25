@@ -1,0 +1,61 @@
+  
+  @import url(./variable.css);
+html{
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+    background: var(--rich-black-fogra-29);
+
+}
+.rating_heading{
+   color: white; 
+   animation: scale-up 1s ease;
+}
+@keyframes scale-up {
+  0%  {
+ opacity:0 ;
+ transform: scale(.5);
+ } 
+    100%  {
+ opacity:1;
+ transform: scale(1);
+   }
+    
+}.star_rating{
+  user-select: none; 
+  padding: 2px 3px; 
+  border-radius: 4px;
+  text-align: center;
+  animation: scale-up 1s ease;
+}
+ 
+@keyframes slide-up {
+  0%  {
+ opacity:0 ;
+ transform: translateY(50px);
+ } 
+    100%  {
+ opacity:1;
+ transform: scale(0px);
+   }
+    
+}
+
+.star{
+    font-size: 200%;
+    background-color: #111;
+    color: #fd4;
+    border: none;
+
+}
+.star:hover{
+    cursor: pointer;
+}
